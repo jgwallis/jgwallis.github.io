@@ -1,0 +1,1086 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Titillium Web Bold";
+  src: url("../fonts/titillium-web/TitilliumWeb-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 700; }
+
+@font-face {
+  font-family: "Titillium Web SemiBold";
+  src: url("../fonts/titillium-web/TitilliumWeb-SemiBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 600; }
+
+@font-face {
+  font-family: "Titillium Web Regular";
+  src: url("../fonts/titillium-web/TitilliumWeb-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400; }
+
+@font-face {
+  font-family: "Cormorant Bold";
+  src: url("../fonts/cormorant/Cormorant-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 700; }
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/open-sans/OpenSans-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+/* line 1, /home/jgwallis/JGWNewSite-V001/sources/sass/base/_buttons.scss */
+button, [type='button'], [type='reset'], [type='submit'] {
+  appearance: none;
+  background-color: #1565c0;
+  border: 0;
+  border-radius: 3px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1em;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 600;
+  line-height: 1;
+  padding: 0.75em 1.5em;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 150ms ease;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap; }
+  /* line 22, /home/jgwallis/JGWNewSite-V001/sources/sass/base/_buttons.scss */
+  button:hover, button:focus, [type='button']:hover, [type='button']:focus, [type='reset']:hover, [type='reset']:focus, [type='submit']:hover, [type='submit']:focus {
+    background-color: #11519a;
+    color: #fff; }
+  /* line 28, /home/jgwallis/JGWNewSite-V001/sources/sass/base/_buttons.scss */
+  button:disabled, [type='button']:disabled, [type='reset']:disabled, [type='submit']:disabled {
+    cursor: not-allowed;
+    opacity: 0.5; }
+    /* line 32, /home/jgwallis/JGWNewSite-V001/sources/sass/base/_buttons.scss */
+    button:disabled:hover, [type='button']:disabled:hover, [type='reset']:disabled:hover, [type='submit']:disabled:hover {
+      background-color: #1565c0; }
+
+/* line 1, /home/jgwallis/JGWNewSite-V001/sources/sass/base/_forms.scss */
+fieldset {
+  background-color: transparent;
+  border: 0;
+  margin: 0;
+  padding: 0; }
+
+/* line 8, /home/jgwallis/JGWNewSite-V001/sources/sass/base/_forms.scss */
+legend {
+  font-weight: 600;
+  margin-bottom: 0.375em;
+  padding: 0; }
+
+/* line 14, /home/jgwallis/JGWNewSite-V001/sources/sass/base/_forms.scss */
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.375em; }
+
+/* line 20, /home/jgwallis/JGWNewSite-V001/sources/sass/base/_forms.scss */
+input,
+select,
+textarea {
+  display: block;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1em; }
+
+/* line 28, /home/jgwallis/JGWNewSite-V001/sources/sass/base/_forms.scss */
+[type='color'], [type='date'], [type='datetime'], [type='datetime-local'], [type='email'], [type='month'], [type='number'], [type='password'], [type='search'], [type='tel'], [type='text'], [type='time'], [type='url'], [type='week'], input:not([type]), textarea {
+  appearance: none;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06);
+  box-sizing: border-box;
+  margin-bottom: 0.75em;
+  padding: 0.5em;
+  transition: border-color 150ms ease;
+  width: 100%; }
+  /* line 40, /home/jgwallis/JGWNewSite-V001/sources/sass/base/_forms.scss */
+  [type='color']:hover, [type='date']:hover, [type='datetime']:hover, [type='datetime-local']:hover, [type='email']:hover, [type='month']:hover, [type='number']:hover, [type='password']:hover, [type='search']:hover, [type='tel']:hover, [type='text']:hover, [type='time']:hover, [type='url']:hover, [type='week']:hover, input:not([type]):hover, textarea:hover {
+    border-color: #b1b1b1; }
+  /* line 44, /home/jgwallis/JGWNewSite-V001/sources/sass/base/_forms.scss */
+  [type='color']:focus, [type='date']:focus, [type='datetime']:focus, [type='datetime-local']:focus, [type='email']:focus, [type='month']:focus, [type='number']:focus, [type='password']:focus, [type='search']:focus, [type='tel']:focus, [type='text']:focus, [type='time']:focus, [type='url']:focus, [type='week']:focus, input:not([type]):focus, textarea:focus {
+    border-color: #1565c0;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06), 0 0 5px rgba(18, 89, 169, 0.7);
+    outline: none; }
+  /* line 50, /home/jgwallis/JGWNewSite-V001/sources/sass/base/_forms.scss */
+  [type='color']:disabled, [type='date']:disabled, [type='datetime']:disabled, [type='datetime-local']:disabled, [type='email']:disabled, [type='month']:disabled, [type='number']:disabled, [type='password']:disabled, [type='search']:disabled, [type='tel']:disabled, [type='text']:disabled, [type='time']:disabled, [type='url']:disabled, [type='week']:disabled, input:not([type]):disabled, textarea:disabled {
+    background-color: #f2f2f2;
+    cursor: not-allowed; }
+    /* line 54, /home/jgwallis/JGWNewSite-V001/sources/sass/base/_forms.scss */
+    [type='color']:disabled:hover, [type='date']:disabled:hover, [type='datetime']:disabled:hover, [type='datetime-local']:disabled:hover, [type='email']:disabled:hover, [type='month']:disabled:hover, [type='number']:disabled:hover, [type='password']:disabled:hover, [type='search']:disabled:hover, [type='tel']:disabled:hover, [type='text']:disabled:hover, [type='time']:disabled:hover, [type='url']:disabled:hover, [type='week']:disabled:hover, input:not([type]):disabled:hover, textarea:disabled:hover {
+      border: 1px solid #ddd; }
+  /* line 59, /home/jgwallis/JGWNewSite-V001/sources/sass/base/_forms.scss */
+  [type='color']::placeholder, [type='date']::placeholder, [type='datetime']::placeholder, [type='datetime-local']::placeholder, [type='email']::placeholder, [type='month']::placeholder, [type='number']::placeholder, [type='password']::placeholder, [type='search']::placeholder, [type='tel']::placeholder, [type='text']::placeholder, [type='time']::placeholder, [type='url']::placeholder, [type='week']::placeholder, input:not([type])::placeholder, textarea::placeholder {
+    color: #858585; }
+
+/* line 64, /home/jgwallis/JGWNewSite-V001/sources/sass/base/_forms.scss */
+textarea {
+  resize: vertical; }
+
+/* line 68, /home/jgwallis/JGWNewSite-V001/sources/sass/base/_forms.scss */
+[type="checkbox"],
+[type="radio"] {
+  display: inline;
+  margin-right: 0.375em; }
+
+/* line 74, /home/jgwallis/JGWNewSite-V001/sources/sass/base/_forms.scss */
+[type="file"] {
+  margin-bottom: 0.75em;
+  width: 100%; }
+
+/* line 79, /home/jgwallis/JGWNewSite-V001/sources/sass/base/_forms.scss */
+select {
+  margin-bottom: 0.75em;
+  width: 100%; }
+
+/* line 1, /home/jgwallis/JGWNewSite-V001/sources/sass/base/_layout.scss */
+html {
+  box-sizing: border-box; }
+
+/* line 5, /home/jgwallis/JGWNewSite-V001/sources/sass/base/_layout.scss */
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+/* line 11, /home/jgwallis/JGWNewSite-V001/sources/sass/base/_layout.scss */
+html,
+body {
+  height: 100%; }
+
+/* line 1, /home/jgwallis/JGWNewSite-V001/sources/sass/base/_lists.scss */
+ul,
+ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+
+/* line 10, /home/jgwallis/JGWNewSite-V001/sources/sass/base/_lists.scss */
+ul {
+  list-style-type: disc;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 1em;
+  margin-left: 1em; }
+
+/* line 20, /home/jgwallis/JGWNewSite-V001/sources/sass/base/_lists.scss */
+li {
+  margin: 0 6px 6px 0; }
+
+/* line 24, /home/jgwallis/JGWNewSite-V001/sources/sass/base/_lists.scss */
+dl {
+  margin: 0; }
+
+/* line 28, /home/jgwallis/JGWNewSite-V001/sources/sass/base/_lists.scss */
+dt {
+  font-weight: 600;
+  margin: 0; }
+
+/* line 33, /home/jgwallis/JGWNewSite-V001/sources/sass/base/_lists.scss */
+dd {
+  margin: 0; }
+
+/* line 39, /home/jgwallis/JGWNewSite-V001/sources/sass/base/_lists.scss */
+ol {
+  list-style-type: decimal;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 1em;
+  margin-left: 1em; }
+
+/* line 1, /home/jgwallis/JGWNewSite-V001/sources/sass/base/_media.scss */
+figure {
+  margin: 0; }
+
+/* line 5, /home/jgwallis/JGWNewSite-V001/sources/sass/base/_media.scss */
+img,
+picture {
+  margin: 0;
+  max-width: 100%; }
+
+/* line 1, /home/jgwallis/JGWNewSite-V001/sources/sass/base/_tables.scss */
+table {
+  border-collapse: collapse;
+  margin: 0.75em 0;
+  table-layout: fixed;
+  width: 100%; }
+
+/* line 8, /home/jgwallis/JGWNewSite-V001/sources/sass/base/_tables.scss */
+th {
+  border-bottom: 1px solid #a6a6a6;
+  font-weight: 600;
+  padding: 0.75em 0;
+  text-align: left; }
+
+/* line 15, /home/jgwallis/JGWNewSite-V001/sources/sass/base/_tables.scss */
+td {
+  border-bottom: 1px solid #ddd;
+  padding: 0.75em 0; }
+
+/* line 20, /home/jgwallis/JGWNewSite-V001/sources/sass/base/_tables.scss */
+tr,
+td,
+th {
+  vertical-align: middle; }
+
+/* line 1, /home/jgwallis/JGWNewSite-V001/sources/sass/base/_typography.scss */
+body {
+  color: #333;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1em;
+  line-height: 1.5; }
+
+/* line 8, /home/jgwallis/JGWNewSite-V001/sources/sass/base/_typography.scss */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Titillium Web SemiBold", sans-serif;
+  font-size: 1.25em;
+  line-height: 1.2;
+  margin: 0 0 0.75em; }
+
+/* line 20, /home/jgwallis/JGWNewSite-V001/sources/sass/base/_typography.scss */
+p {
+  margin: 0 0 0.75em; }
+
+/* line 24, /home/jgwallis/JGWNewSite-V001/sources/sass/base/_typography.scss */
+a {
+  color: #1565c0;
+  text-decoration: none;
+  transition: color 150ms ease; }
+  /* line 29, /home/jgwallis/JGWNewSite-V001/sources/sass/base/_typography.scss */
+  a:active, a:focus, a:hover {
+    color: #104c90; }
+
+/* line 36, /home/jgwallis/JGWNewSite-V001/sources/sass/base/_typography.scss */
+hr {
+  border-bottom: 1px solid #ddd;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  margin: 1.5em 0; }
+
+/* line 54, /home/jgwallis/JGWNewSite-V001/sources/sass/base/_typography.scss */
+h1 {
+  margin-top: 1.25em;
+  font-size: 2.44141em; }
+
+/* line 59, /home/jgwallis/JGWNewSite-V001/sources/sass/base/_typography.scss */
+h2 {
+  margin-top: 0.75em;
+  font-size: 1.5625em;
+  margin-bottom: 0.25em; }
+
+/* line 65, /home/jgwallis/JGWNewSite-V001/sources/sass/base/_typography.scss */
+h3 {
+  font-size: 1.25em;
+  margin-bottom: 0.25em; }
+
+/* !!!!
+h4 {
+  font-size: $h4-font-size;
+}
+
+h5 {
+  font-size: $h5-font-size;
+}
+
+h6 {
+  font-size: $h6-font-size;
+}
+*/
+/* line 4, /home/jgwallis/JGWNewSite-V001/sources/sass/lib/neat/grid/_box-sizing.scss */
+html {
+  box-sizing: border-box; }
+
+/* line 9, /home/jgwallis/JGWNewSite-V001/sources/sass/lib/neat/grid/_box-sizing.scss */
+*, *::after, *::before {
+  box-sizing: inherit; }
+
+/* line 12, /home/jgwallis/JGWNewSite-V001/sources/sass/lib/neat/grid/_visual-grid.scss */
+body:before {
+  background-image: -webkit-linear-gradient(left, transparent 0, #f8f8f8 0, #f8f8f8 6.17215%, transparent 6.17215%, transparent 8.5298%, #f8f8f8 8.5298%, #f8f8f8 14.70196%, transparent 14.70196%, transparent 17.05961%, #f8f8f8 17.05961%, #f8f8f8 23.23176%, transparent 23.23176%, transparent 25.58941%, #f8f8f8 25.58941%, #f8f8f8 31.76157%, transparent 31.76157%, transparent 34.11922%, #f8f8f8 34.11922%, #f8f8f8 40.29137%, transparent 40.29137%, transparent 42.64902%, #f8f8f8 42.64902%, #f8f8f8 48.82117%, transparent 48.82117%, transparent 51.17883%, #f8f8f8 51.17883%, #f8f8f8 57.35098%, transparent 57.35098%, transparent 59.70863%, #f8f8f8 59.70863%, #f8f8f8 65.88078%, transparent 65.88078%, transparent 68.23843%, #f8f8f8 68.23843%, #f8f8f8 74.41059%, transparent 74.41059%, transparent 76.76824%, #f8f8f8 76.76824%, #f8f8f8 82.94039%, transparent 82.94039%, transparent 85.29804%, #f8f8f8 85.29804%, #f8f8f8 91.4702%, transparent 91.4702%, transparent 93.82785%, #f8f8f8 93.82785%, #f8f8f8 100%, transparent 100%);
+  background-image: -moz-linear-gradient(left, transparent 0, #f8f8f8 0, #f8f8f8 6.17215%, transparent 6.17215%, transparent 8.5298%, #f8f8f8 8.5298%, #f8f8f8 14.70196%, transparent 14.70196%, transparent 17.05961%, #f8f8f8 17.05961%, #f8f8f8 23.23176%, transparent 23.23176%, transparent 25.58941%, #f8f8f8 25.58941%, #f8f8f8 31.76157%, transparent 31.76157%, transparent 34.11922%, #f8f8f8 34.11922%, #f8f8f8 40.29137%, transparent 40.29137%, transparent 42.64902%, #f8f8f8 42.64902%, #f8f8f8 48.82117%, transparent 48.82117%, transparent 51.17883%, #f8f8f8 51.17883%, #f8f8f8 57.35098%, transparent 57.35098%, transparent 59.70863%, #f8f8f8 59.70863%, #f8f8f8 65.88078%, transparent 65.88078%, transparent 68.23843%, #f8f8f8 68.23843%, #f8f8f8 74.41059%, transparent 74.41059%, transparent 76.76824%, #f8f8f8 76.76824%, #f8f8f8 82.94039%, transparent 82.94039%, transparent 85.29804%, #f8f8f8 85.29804%, #f8f8f8 91.4702%, transparent 91.4702%, transparent 93.82785%, #f8f8f8 93.82785%, #f8f8f8 100%, transparent 100%);
+  background-image: -ms-linear-gradient(left, transparent 0, #f8f8f8 0, #f8f8f8 6.17215%, transparent 6.17215%, transparent 8.5298%, #f8f8f8 8.5298%, #f8f8f8 14.70196%, transparent 14.70196%, transparent 17.05961%, #f8f8f8 17.05961%, #f8f8f8 23.23176%, transparent 23.23176%, transparent 25.58941%, #f8f8f8 25.58941%, #f8f8f8 31.76157%, transparent 31.76157%, transparent 34.11922%, #f8f8f8 34.11922%, #f8f8f8 40.29137%, transparent 40.29137%, transparent 42.64902%, #f8f8f8 42.64902%, #f8f8f8 48.82117%, transparent 48.82117%, transparent 51.17883%, #f8f8f8 51.17883%, #f8f8f8 57.35098%, transparent 57.35098%, transparent 59.70863%, #f8f8f8 59.70863%, #f8f8f8 65.88078%, transparent 65.88078%, transparent 68.23843%, #f8f8f8 68.23843%, #f8f8f8 74.41059%, transparent 74.41059%, transparent 76.76824%, #f8f8f8 76.76824%, #f8f8f8 82.94039%, transparent 82.94039%, transparent 85.29804%, #f8f8f8 85.29804%, #f8f8f8 91.4702%, transparent 91.4702%, transparent 93.82785%, #f8f8f8 93.82785%, #f8f8f8 100%, transparent 100%);
+  background-image: -o-linear-gradient(left, transparent 0, #f8f8f8 0, #f8f8f8 6.17215%, transparent 6.17215%, transparent 8.5298%, #f8f8f8 8.5298%, #f8f8f8 14.70196%, transparent 14.70196%, transparent 17.05961%, #f8f8f8 17.05961%, #f8f8f8 23.23176%, transparent 23.23176%, transparent 25.58941%, #f8f8f8 25.58941%, #f8f8f8 31.76157%, transparent 31.76157%, transparent 34.11922%, #f8f8f8 34.11922%, #f8f8f8 40.29137%, transparent 40.29137%, transparent 42.64902%, #f8f8f8 42.64902%, #f8f8f8 48.82117%, transparent 48.82117%, transparent 51.17883%, #f8f8f8 51.17883%, #f8f8f8 57.35098%, transparent 57.35098%, transparent 59.70863%, #f8f8f8 59.70863%, #f8f8f8 65.88078%, transparent 65.88078%, transparent 68.23843%, #f8f8f8 68.23843%, #f8f8f8 74.41059%, transparent 74.41059%, transparent 76.76824%, #f8f8f8 76.76824%, #f8f8f8 82.94039%, transparent 82.94039%, transparent 85.29804%, #f8f8f8 85.29804%, #f8f8f8 91.4702%, transparent 91.4702%, transparent 93.82785%, #f8f8f8 93.82785%, #f8f8f8 100%, transparent 100%);
+  background-image: linear-gradient(to left, transparent 0, #f8f8f8 0, #f8f8f8 6.17215%, transparent 6.17215%, transparent 8.5298%, #f8f8f8 8.5298%, #f8f8f8 14.70196%, transparent 14.70196%, transparent 17.05961%, #f8f8f8 17.05961%, #f8f8f8 23.23176%, transparent 23.23176%, transparent 25.58941%, #f8f8f8 25.58941%, #f8f8f8 31.76157%, transparent 31.76157%, transparent 34.11922%, #f8f8f8 34.11922%, #f8f8f8 40.29137%, transparent 40.29137%, transparent 42.64902%, #f8f8f8 42.64902%, #f8f8f8 48.82117%, transparent 48.82117%, transparent 51.17883%, #f8f8f8 51.17883%, #f8f8f8 57.35098%, transparent 57.35098%, transparent 59.70863%, #f8f8f8 59.70863%, #f8f8f8 65.88078%, transparent 65.88078%, transparent 68.23843%, #f8f8f8 68.23843%, #f8f8f8 74.41059%, transparent 74.41059%, transparent 76.76824%, #f8f8f8 76.76824%, #f8f8f8 82.94039%, transparent 82.94039%, transparent 85.29804%, #f8f8f8 85.29804%, #f8f8f8 91.4702%, transparent 91.4702%, transparent 93.82785%, #f8f8f8 93.82785%, #f8f8f8 100%, transparent 100%);
+  content: "";
+  display: inline-block;
+  height: 100%;
+  left: 0;
+  margin: 0 auto;
+  max-width: 1200px;
+  opacity: 0.4;
+  pointer-events: none;
+  position: fixed;
+  right: 0;
+  width: 100%;
+  z-index: -1; }
+
+/* line 61, /home/jgwallis/JGWNewSite-V001/sources/sass/styles.scss */
+section {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto; }
+  /* line 20, /home/jgwallis/JGWNewSite-V001/sources/sass/lib/neat/mixins/_clearfix.scss */
+  section::after {
+    clear: both;
+    content: "";
+    display: block; }
+  /* line 66, /home/jgwallis/JGWNewSite-V001/sources/sass/styles.scss */
+  section article {
+    margin-left: 17.05961%;
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 65.88078%; }
+    /* line 89, /home/jgwallis/JGWNewSite-V001/sources/sass/lib/neat/grid/_span-columns.scss */
+    section article:last-child {
+      margin-right: 0; }
+    @media screen and (max-width: 760px) {
+      /* line 66, /home/jgwallis/JGWNewSite-V001/sources/sass/styles.scss */
+      section article {
+        margin-left: 0%;
+        width: 100%; } }
+
+/* Navigation experiment. */
+/* Navigation bar. */
+/* line 3, /home/jgwallis/JGWNewSite-V001/sources/sass/navbarexperiment.scss */
+header.navigation {
+  font-family: "Titillium Web Regular", sans-serif;
+  font-size: 1.25em;
+  background-color: #333;
+  border-bottom: 1px solid #1a1a1a;
+  min-height: 60px;
+  width: 100%;
+  z-index: 999; }
+  /* line 31, /home/jgwallis/JGWNewSite-V001/sources/sass/navbarexperiment.scss */
+  header.navigation .navigation-wrapper {
+    position: relative;
+    z-index: 9999; }
+    /* line 20, /home/jgwallis/JGWNewSite-V001/sources/sass/lib/neat/mixins/_clearfix.scss */
+    header.navigation .navigation-wrapper::after {
+      clear: both;
+      content: "";
+      display: block; }
+  /* line 37, /home/jgwallis/JGWNewSite-V001/sources/sass/navbarexperiment.scss */
+  header.navigation .logo {
+    float: left;
+    max-height: 60px;
+    padding-left: 1em;
+    padding-right: 2em; }
+    /* line 43, /home/jgwallis/JGWNewSite-V001/sources/sass/navbarexperiment.scss */
+    header.navigation .logo img {
+      max-height: 60px;
+      padding: 0.8em 0; }
+  /* line 51, /home/jgwallis/JGWNewSite-V001/sources/sass/navbarexperiment.scss */
+  header.navigation .navigation-menu-button {
+    color: rgba(255, 255, 255, 0.7);
+    display: block;
+    float: right;
+    line-height: 60px;
+    margin: 0;
+    padding-right: 1em;
+    text-decoration: none;
+    text-transform: uppercase; }
+    @media screen and (min-width: 900px) {
+      /* line 51, /home/jgwallis/JGWNewSite-V001/sources/sass/navbarexperiment.scss */
+      header.navigation .navigation-menu-button {
+        display: none; } }
+    /* line 65, /home/jgwallis/JGWNewSite-V001/sources/sass/navbarexperiment.scss */
+    header.navigation .navigation-menu-button:focus, header.navigation .navigation-menu-button:hover {
+      color: white; }
+  /* line 73, /home/jgwallis/JGWNewSite-V001/sources/sass/navbarexperiment.scss */
+  header.navigation nav {
+    float: none;
+    min-height: 60px;
+    z-index: 9999999; }
+    @media screen and (min-width: 900px) {
+      /* line 73, /home/jgwallis/JGWNewSite-V001/sources/sass/navbarexperiment.scss */
+      header.navigation nav {
+        float: left; } }
+  /* line 83, /home/jgwallis/JGWNewSite-V001/sources/sass/navbarexperiment.scss */
+  header.navigation ul.navigation-menu {
+    clear: both;
+    display: none;
+    margin: 0 auto;
+    overflow: visible;
+    padding: 0;
+    width: 100%;
+    z-index: 9999; }
+    /* line 92, /home/jgwallis/JGWNewSite-V001/sources/sass/navbarexperiment.scss */
+    header.navigation ul.navigation-menu.show {
+      display: block; }
+    @media screen and (min-width: 900px) {
+      /* line 83, /home/jgwallis/JGWNewSite-V001/sources/sass/navbarexperiment.scss */
+      header.navigation ul.navigation-menu {
+        display: inline;
+        margin: 0;
+        padding: 0; } }
+  /* line 105, /home/jgwallis/JGWNewSite-V001/sources/sass/navbarexperiment.scss */
+  header.navigation ul li.nav-link {
+    background: #333;
+    display: block;
+    line-height: 60px;
+    overflow: hidden;
+    padding-right: 0.8em;
+    text-align: right;
+    width: 100%;
+    z-index: 9999; }
+    @media screen and (min-width: 900px) {
+      /* line 105, /home/jgwallis/JGWNewSite-V001/sources/sass/navbarexperiment.scss */
+      header.navigation ul li.nav-link {
+        background: transparent;
+        display: inline;
+        line-height: 60px;
+        text-decoration: none;
+        width: auto; } }
+    /* line 123, /home/jgwallis/JGWNewSite-V001/sources/sass/navbarexperiment.scss */
+    header.navigation ul li.nav-link a {
+      color: rgba(255, 255, 255, 0.7);
+      display: inline-block;
+      text-decoration: none; }
+      @media screen and (min-width: 900px) {
+        /* line 123, /home/jgwallis/JGWNewSite-V001/sources/sass/navbarexperiment.scss */
+        header.navigation ul li.nav-link a {
+          padding-right: 1em; } }
+      /* line 132, /home/jgwallis/JGWNewSite-V001/sources/sass/navbarexperiment.scss */
+      header.navigation ul li.nav-link a:focus, header.navigation ul li.nav-link a:hover {
+        color: white; }
+  /* line 139, /home/jgwallis/JGWNewSite-V001/sources/sass/navbarexperiment.scss */
+  header.navigation .active-nav-item a {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    padding-bottom: 3px; }
+  /* line 146, /home/jgwallis/JGWNewSite-V001/sources/sass/navbarexperiment.scss */
+  header.navigation li.more.nav-link {
+    padding-right: 0; }
+    @media screen and (min-width: 900px) {
+      /* line 146, /home/jgwallis/JGWNewSite-V001/sources/sass/navbarexperiment.scss */
+      header.navigation li.more.nav-link {
+        padding-right: 1em; } }
+    /* line 153, /home/jgwallis/JGWNewSite-V001/sources/sass/navbarexperiment.scss */
+    header.navigation li.more.nav-link > ul > li:first-child a {
+      padding-top: 1em; }
+    /* line 157, /home/jgwallis/JGWNewSite-V001/sources/sass/navbarexperiment.scss */
+    header.navigation li.more.nav-link a {
+      margin-right: 1em; }
+    /* line 161, /home/jgwallis/JGWNewSite-V001/sources/sass/navbarexperiment.scss */
+    header.navigation li.more.nav-link > a {
+      padding-right: 0.6em; }
+    /* line 165, /home/jgwallis/JGWNewSite-V001/sources/sass/navbarexperiment.scss */
+    header.navigation li.more.nav-link > a::after {
+      position: absolute;
+      top: auto;
+      right: -0.4em;
+      bottom: auto;
+      left: auto;
+      color: rgba(255, 255, 255, 0.7);
+      content: "\25BE"; }
+  /* line 172, /home/jgwallis/JGWNewSite-V001/sources/sass/navbarexperiment.scss */
+  header.navigation li.more {
+    overflow: visible;
+    padding-right: 0; }
+    /* line 176, /home/jgwallis/JGWNewSite-V001/sources/sass/navbarexperiment.scss */
+    header.navigation li.more a {
+      padding-right: 0.8em; }
+    /* line 180, /home/jgwallis/JGWNewSite-V001/sources/sass/navbarexperiment.scss */
+    header.navigation li.more > a {
+      padding-right: 1.6em;
+      position: relative; }
+      @media screen and (min-width: 900px) {
+        /* line 180, /home/jgwallis/JGWNewSite-V001/sources/sass/navbarexperiment.scss */
+        header.navigation li.more > a {
+          margin-right: 1em; } }
+      /* line 188, /home/jgwallis/JGWNewSite-V001/sources/sass/navbarexperiment.scss */
+      header.navigation li.more > a::after {
+        content: "›";
+        font-size: 1.2em;
+        position: absolute;
+        right: 0.5em; }
+    /* line 196, /home/jgwallis/JGWNewSite-V001/sources/sass/navbarexperiment.scss */
+    header.navigation li.more:focus > .submenu,
+    header.navigation li.more:hover > .submenu {
+      display: block; }
+    @media screen and (min-width: 900px) {
+      /* line 172, /home/jgwallis/JGWNewSite-V001/sources/sass/navbarexperiment.scss */
+      header.navigation li.more {
+        padding-right: 0.8em;
+        position: relative; } }
+  /* line 207, /home/jgwallis/JGWNewSite-V001/sources/sass/navbarexperiment.scss */
+  header.navigation ul.submenu {
+    display: none;
+    padding-left: 0; }
+    @media screen and (min-width: 900px) {
+      /* line 207, /home/jgwallis/JGWNewSite-V001/sources/sass/navbarexperiment.scss */
+      header.navigation ul.submenu {
+        left: -1em;
+        position: absolute;
+        top: 1.5em; } }
+    @media screen and (min-width: 900px) {
+      /* line 217, /home/jgwallis/JGWNewSite-V001/sources/sass/navbarexperiment.scss */
+      header.navigation ul.submenu .submenu.fly-out-right {
+        left: 11.8em;
+        top: 0; } }
+    @media screen and (min-width: 900px) {
+      /* line 224, /home/jgwallis/JGWNewSite-V001/sources/sass/navbarexperiment.scss */
+      header.navigation ul.submenu .submenu.fly-out-left {
+        left: -11.8em;
+        top: 0; } }
+    @media screen and (min-width: 900px) {
+      /* line 231, /home/jgwallis/JGWNewSite-V001/sources/sass/navbarexperiment.scss */
+      header.navigation ul.submenu .submenu {
+        left: 11.8em;
+        top: 0; } }
+    /* line 238, /home/jgwallis/JGWNewSite-V001/sources/sass/navbarexperiment.scss */
+    header.navigation ul.submenu li {
+      display: block;
+      padding-right: 0; }
+      @media screen and (min-width: 900px) {
+        /* line 238, /home/jgwallis/JGWNewSite-V001/sources/sass/navbarexperiment.scss */
+        header.navigation ul.submenu li {
+          line-height: 46.15385px; }
+          /* line 245, /home/jgwallis/JGWNewSite-V001/sources/sass/navbarexperiment.scss */
+          header.navigation ul.submenu li:first-child > a {
+            border-top-left-radius: 3px;
+            border-top-right-radius: 3px; }
+          /* line 250, /home/jgwallis/JGWNewSite-V001/sources/sass/navbarexperiment.scss */
+          header.navigation ul.submenu li:last-child > a {
+            border-bottom-left-radius: 3px;
+            border-bottom-right-radius: 3px;
+            padding-bottom: 0.7em; } }
+      /* line 257, /home/jgwallis/JGWNewSite-V001/sources/sass/navbarexperiment.scss */
+      header.navigation ul.submenu li a {
+        background-color: #2b2b2b;
+        display: inline-block;
+        text-align: right;
+        width: 100%; }
+        @media screen and (min-width: 900px) {
+          /* line 257, /home/jgwallis/JGWNewSite-V001/sources/sass/navbarexperiment.scss */
+          header.navigation ul.submenu li a {
+            background-color: #333;
+            padding-left: 1em;
+            text-align: left;
+            width: 12em; } }
+  /* line 275, /home/jgwallis/JGWNewSite-V001/sources/sass/navbarexperiment.scss */
+  header.navigation .navigation-tools {
+    background: #505050;
+    clear: both;
+    display: block;
+    height: 60px; }
+    @media screen and (min-width: 900px) {
+      /* line 275, /home/jgwallis/JGWNewSite-V001/sources/sass/navbarexperiment.scss */
+      header.navigation .navigation-tools {
+        background: transparent;
+        clear: none;
+        float: right; } }
+
+/*
+
+header.navigation {
+  $base-border-color: gainsboro !default;
+  $base-border-radius: 3px !default;
+  $action-color: #477DCA !default;
+  $dark-gray: #333 !default;
+  $large-screen: 53.75em !default;
+  $navigation-padding: 1em;
+  $navigation-background: $dark-gray;
+  $navigation-color: transparentize(white, 0.3);
+  $navigation-color-hover: white;
+  $navigation-height: 60px;
+  $navigation-nav-button-background: $action-color;
+  $navigation-nav-button-background-hover: lighten($navigation-background, 10%);
+  $navigation-nav-button-border: 1px solid lighten($navigation-nav-button-background, 20%);
+  $navigation-search-background: lighten($navigation-background, 5);
+  $navigation-search-border: 1px solid darken($navigation-background, 5);
+  $navigation-active-link-color: transparentize(white, 0.5);
+  $navigation-submenu-padding: 1em;
+  $navigation-submenu-width: 12em;
+  $horizontal-bar-mode: $large-screen;
+
+  background-color: $navigation-background;
+  border-bottom: 1px solid darken($navigation-background, 10);
+  min-height: $navigation-height;
+  width: 100%;
+  z-index: 999;
+
+  .navigation-wrapper {
+    @include clearfix;
+    position: relative;
+    z-index: 9999;
+  }
+
+  .logo {
+    float: left;
+    max-height: $navigation-height;
+    padding-left: $navigation-padding;
+    padding-right: 2em;
+
+    img {
+      max-height: $navigation-height;
+      padding: 0.8em 0;
+    }
+  }
+
+  // Mobile view
+
+  .navigation-menu-button {
+    color: $navigation-color;
+    display: block;
+    float: right;
+    line-height: $navigation-height;
+    margin: 0;
+    padding-right: 1em;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    @include media ($horizontal-bar-mode) {
+      display: none;
+    }
+
+    &:focus,
+    &:hover {
+      color: $navigation-color-hover;
+    }
+  }
+
+  // Nav menu
+
+  nav {
+    float: none;
+    min-height: $navigation-height;
+    z-index: 9999999;
+
+    @include media ($horizontal-bar-mode) {
+      float: left;
+    }
+  }
+
+  ul.navigation-menu {
+    clear: both;
+    display: none;
+    margin: 0 auto;
+    overflow: visible;
+    padding: 0;
+    width: 100%;
+    z-index: 9999;
+
+    &.show {
+      display: block;
+    }
+
+    @include media ($horizontal-bar-mode) {
+      display: inline;
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  // The nav items
+
+  ul li.nav-link {
+    background: $navigation-background;
+    display: block;
+    line-height: $navigation-height;
+    overflow: hidden;
+    padding-right: 0.8em;
+    text-align: right;
+    width: 100%;
+    z-index: 9999;
+
+    @include media ($horizontal-bar-mode) {
+      background: transparent;
+      display: inline;
+      line-height: $navigation-height;
+      text-decoration: none;
+      width: auto;
+    }
+
+    a {
+      color: $navigation-color;
+      display: inline-block;
+      text-decoration: none;
+
+      @include media ($horizontal-bar-mode) {
+        padding-right: 1em;
+      }
+
+      &:focus,
+      &:hover {
+        color: $navigation-color-hover;
+      }
+    }
+  }
+
+  .active-nav-item a {
+    border-bottom: 1px solid $navigation-active-link-color;
+    padding-bottom: 3px;
+  }
+
+  // Sub menus
+
+  li.more.nav-link {
+    padding-right: 0;
+
+    @include media($horizontal-bar-mode) {
+      padding-right: $navigation-submenu-padding;
+    }
+
+    > ul > li:first-child a  {
+      padding-top: 1em;
+    }
+
+    a {
+      margin-right: $navigation-submenu-padding;
+    }
+
+    > a {
+      padding-right: 0.6em;
+    }
+
+    > a::after {
+      @include position(absolute, auto -0.4em auto auto);
+      color: $navigation-color;
+      content: "\25BE";
+    }
+  }
+
+  li.more {
+    overflow: visible;
+    padding-right: 0;
+
+    a {
+      padding-right: 0.8em;
+    }
+
+    > a {
+      padding-right: 1.6em;
+      position: relative;
+
+      @include media($horizontal-bar-mode) {
+        margin-right: $navigation-submenu-padding;
+      }
+
+      &::after {
+        content: "›";
+        font-size: 1.2em;
+        position: absolute;
+        right: $navigation-submenu-padding / 2;
+      }
+    }
+
+    &:focus > .submenu,
+    &:hover > .submenu {
+      display: block;
+    }
+
+    @include media($horizontal-bar-mode) {
+      padding-right: 0.8em;
+      position: relative;
+    }
+  }
+
+  ul.submenu {
+    display: none;
+    padding-left: 0;
+
+    @include media($horizontal-bar-mode) {
+      left: -$navigation-submenu-padding;
+      position: absolute;
+      top: 1.5em;
+    }
+
+    .submenu.fly-out-right {
+      @include media($horizontal-bar-mode) {
+        left: $navigation-submenu-width - 0.2em;
+        top: 0;
+      }
+    }
+
+    .submenu.fly-out-left {
+      @include media($horizontal-bar-mode) {
+        left: -$navigation-submenu-width + 0.2em;
+        top: 0;
+      }
+    }
+
+    .submenu {
+      @include media($horizontal-bar-mode) {
+        left: $navigation-submenu-width - 0.2em;
+        top: 0;
+      }
+    }
+
+    li {
+      display: block;
+      padding-right: 0;
+
+      @include media($horizontal-bar-mode) {
+        line-height: $navigation-height / 1.3;
+
+        &:first-child > a {
+          border-top-left-radius: $base-border-radius;
+          border-top-right-radius: $base-border-radius;
+        }
+
+        &:last-child > a {
+          border-bottom-left-radius: $base-border-radius;
+          border-bottom-right-radius: $base-border-radius;
+          padding-bottom: 0.7em;
+        }
+      }
+
+      a {
+        background-color: darken($navigation-background, 3%);
+        display: inline-block;
+        text-align: right;
+        width: 100%;
+
+        @include media($horizontal-bar-mode) {
+          background-color: $navigation-background;
+          padding-left: $navigation-submenu-padding;
+          text-align: left;
+          width: $navigation-submenu-width;
+        }
+      }
+    }
+  }
+
+  // Elements on the far right
+
+  .navigation-tools {
+    background: #505050;
+    clear: both;
+    display: block;
+    height: $navigation-height;
+
+    @include media($horizontal-bar-mode) {
+      background: transparent;
+      clear: none;
+      float: right;
+    }
+  }
+
+  // Search bar
+
+  .search-bar {
+    $search-bar-border-color: $base-border-color;
+    $search-bar-border: 1px solid $search-bar-border-color;
+    $search-bar-background: lighten($search-bar-border-color, 10%);
+
+    float: left;
+    padding: 0.85em 0.85em 0.7em 0.6em;
+    width: 60%;
+
+    form {
+      position: relative;
+
+      input[type=search] {
+        background: $navigation-search-background;
+        border: $navigation-search-border;
+        border-radius: $base-border-radius * 2;
+        box-sizing: border-box;
+        color: $navigation-color;
+        font-size: 0.9em;
+        font-style: italic;
+        margin: 0;
+        padding: 0.5em 0.8em;
+        width: 100%;
+
+        @include media($horizontal-bar-mode) {
+          width: 100%;
+        }
+      }
+
+      button[type=submit] {
+        background: $navigation-search-background;
+        border: 0;
+        bottom: 0.3em;
+        left: auto;
+        outline: none;
+        padding: 0 9px;
+        position: absolute;
+        right: 0.3em;
+        top: 0.3em;
+
+        img {
+          height: 12px;
+          opacity: 0.7;
+          padding: 1px;
+        }
+      }
+    }
+
+    @include media($horizontal-bar-mode) {
+      display: inline-block;
+      position: relative;
+      width: 16em;
+
+      input {
+        box-sizing: border-box;
+        display: block;
+      }
+    }
+  }
+}
+
+*/
+/* Hero image experiment. */
+/* Large image at top of home page. This should be 1,056 pixels wide by 400
+   pixels high.
+
+   Bitters said 'background: image-url("image");' though this CSS syntax was
+   wrong so we have corrected it to 'background-image: url("image");'.
+   */
+/* line 8, /home/jgwallis/JGWNewSite-V001/sources/sass/heroimageexperiment.scss */
+.hero {
+  align-items: center;
+  background-image: url("/img/background-image.png");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  min-height: 20em;
+  padding: 2em; }
+  @media screen and (min-width: 900px) {
+    /* line 8, /home/jgwallis/JGWNewSite-V001/sources/sass/heroimageexperiment.scss */
+    .hero {
+      background-position: left;
+      background-size: cover;
+      justify-content: flex-end; } }
+  /* line 31, /home/jgwallis/JGWNewSite-V001/sources/sass/heroimageexperiment.scss */
+  .hero .hero-content {
+    max-width: 20em;
+    text-align: center; }
+    @media screen and (min-width: 900px) {
+      /* line 31, /home/jgwallis/JGWNewSite-V001/sources/sass/heroimageexperiment.scss */
+      .hero .hero-content {
+        text-align: left; } }
+  /* line 46, /home/jgwallis/JGWNewSite-V001/sources/sass/heroimageexperiment.scss */
+  .hero .hero-logo {
+    margin: auto; }
+
+/* Three main points -- fix, setup, and advise. */
+/* line 97, /home/jgwallis/JGWNewSite-V001/sources/sass/styles.scss */
+.bullets {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1em;
+  margin-bottom: 1.5;
+  overflow: auto;
+  padding: 0; }
+  /* line 111, /home/jgwallis/JGWNewSite-V001/sources/sass/styles.scss */
+  .bullets .bullet {
+    flex-basis: 20em;
+    flex-grow: 1; }
+  /* line 116, /home/jgwallis/JGWNewSite-V001/sources/sass/styles.scss */
+  .bullets .bullet-icon {
+    background: #1565c0;
+    border-radius: 50%;
+    float: left;
+    height: 3.5em;
+    padding: 0.875em;
+    width: 3.5em; }
+  /* line 125, /home/jgwallis/JGWNewSite-V001/sources/sass/styles.scss */
+  .bullets .bullet-icon-1 {
+    background: #1565c0; }
+  /* line 129, /home/jgwallis/JGWNewSite-V001/sources/sass/styles.scss */
+  .bullets .bullet-icon-2 {
+    background: #15c08d; }
+  /* line 133, /home/jgwallis/JGWNewSite-V001/sources/sass/styles.scss */
+  .bullets .bullet-icon-3 {
+    background: #9ec015; }
+  /* line 137, /home/jgwallis/JGWNewSite-V001/sources/sass/styles.scss */
+  .bullets .bullet-content {
+    margin-bottom: 2em;
+    margin-left: 4.9em; }
+  /* line 142, /home/jgwallis/JGWNewSite-V001/sources/sass/styles.scss */
+  .bullets h2 {
+    display: inline-block;
+    font-size: 1.4em;
+    margin: 0 0 0.58333em 0;
+    padding-top: 0.5em; }
+  /* line 150, /home/jgwallis/JGWNewSite-V001/sources/sass/styles.scss */
+  .bullets li {
+    list-style: none; }
+  /* line 154, /home/jgwallis/JGWNewSite-V001/sources/sass/styles.scss */
+  .bullets p {
+    color: #333;
+    line-height: 1.5; }
+  /* line 159, /home/jgwallis/JGWNewSite-V001/sources/sass/styles.scss */
+  .bullets img {
+    max-width: 100%; }
+
+/* Cards might be better than bullets. */
+/* line 169, /home/jgwallis/JGWNewSite-V001/sources/sass/styles.scss */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+
+/* line 175, /home/jgwallis/JGWNewSite-V001/sources/sass/styles.scss */
+.card {
+  background-color: #f7f7f7;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  box-shadow: 0 2px 4px #e6e6e6;
+  cursor: pointer;
+  flex-basis: 15em;
+  flex-grow: 1;
+  margin: 0 1em 1.5em 1em;
+  position: relative;
+  transition: all 0.2s ease-in-out; }
+  /* line 202, /home/jgwallis/JGWNewSite-V001/sources/sass/styles.scss */
+  .card .card-image {
+    background-color: #F8F2B4;
+    height: 150px;
+    max-height: 150px;
+    overflow: hidden; }
+    /* line 208, /home/jgwallis/JGWNewSite-V001/sources/sass/styles.scss */
+    .card .card-image img {
+      border-top-left-radius: 3px;
+      border-top-right-radius: 3px;
+      opacity: 1;
+      transition: all 0.2s ease-in-out;
+      width: 100%; }
+  /* line 216, /home/jgwallis/JGWNewSite-V001/sources/sass/styles.scss */
+  .card .card-header {
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #ddd;
+    border-radius: 3px 3px 0 0;
+    font-size: 1.5em;
+    font-weight: bold;
+    line-height: 1.5em;
+    padding: 0.5em 0.75em;
+    transition: all 0.2s ease-in-out; }
+  /* line 227, /home/jgwallis/JGWNewSite-V001/sources/sass/styles.scss */
+  .card .card-copy {
+    font-size: 1.0em;
+    line-height: 1.5em;
+    padding: 0.75em 0.75em; }
+    /* line 232, /home/jgwallis/JGWNewSite-V001/sources/sass/styles.scss */
+    .card .card-copy p {
+      margin: 0 0 0.75em; }
+  /* line 237, /home/jgwallis/JGWNewSite-V001/sources/sass/styles.scss */
+  .card:focus, .card:hover {
+    cursor: pointer; }
+    /* line 241, /home/jgwallis/JGWNewSite-V001/sources/sass/styles.scss */
+    .card:focus img, .card:hover img {
+      opacity: 0.7; }
+  /* line 246, /home/jgwallis/JGWNewSite-V001/sources/sass/styles.scss */
+  .card:active {
+    background-color: #f7f7f7; }
+    /* line 249, /home/jgwallis/JGWNewSite-V001/sources/sass/styles.scss */
+    .card:active .card-header {
+      background-color: #f7f7f7; }
+
+/*# sourceMappingURL=styles.css.map */
