@@ -1,0 +1,19 @@
+/* This is where we can override simple settings made by UIkit. However, if we
+ * want to override anything major, we would need to add customisations to the
+ * UIkit source code and re-build the CSS distribution using LESS.
+ */
+
+.uk-navbar-container:not(.uk-navbar-transparent) {
+  background: #f6f6ff;
+}
+
+/*
+.uk-navbar-nav {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+*/
