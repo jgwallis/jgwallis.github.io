@@ -1,0 +1,65 @@
+<!doctype html><html xmlns=http://www.w3.org/1999/xhtml class=no-js xml:lang=en lang=en-gb><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="ie=edge"><title>John Wallis – Computer Support in the Mildenhall, Bury St. Edmunds, Newmarket, and Thetford Areas - The Trusted Platform Module</title><meta name=description content="Hardware encryption technology."><meta name=viewport content="width=device-width,initial-scale=1"><meta name=generator content="Hugo 0.55"><link rel="shortcut icon" href=https://jgwallis.github.io/favicon.ico><style>@font-face{font-family:sairasemicondensed;font-display:swap;font-variant:normal;font-weight:700;font-style:normal;src:url(https://jgwallis.github.io/fonts/SairaSemiCondensed-Medium.ttf)format('truetype')}</style><style>@font-face{font-family:open sans;font-display:swap;font-variant:normal;font-weight:400;font-style:normal;src:url(https://jgwallis.github.io/fonts/OpenSans-Regular.ttf)format('truetype')}</style><link rel=stylesheet type=text/css href=https://jgwallis.github.io/css/JGW.css><script src=https://jgwallis.github.io/js/uikit.min.js></script><script src=https://jgwallis.github.io/js/uikit-icons.min.js></script></head><body><nav class="uk-navbar-container uk-visible@m" uk-navbar role=navigation><div class=uk-navbar-center><a class="uk-navbar-item uk-logo" href=https://jgwallis.github.io/index.html><img style=height:30px;width:167px src=https://jgwallis.github.io/images/JGW-Logo.svg alt="John Wallis Logo"></a><ul class=uk-navbar-nav><li><a href=https://jgwallis.github.io/index.html>Home</a></li><li><a href=https://jgwallis.github.io/services/index.html>Services</a></li><li><a href=https://jgwallis.github.io/areas/index.html>Areas</a></li><li><a href=https://jgwallis.github.io/hours/index.html>Hours</a></li><li><a href=https://jgwallis.github.io/reviews/index.html>Reviews</a></li><li><a href=https://jgwallis.github.io/contact/index.html>Contact</a></li><li><a href=https://jgwallis.github.io/prices/index.html>Prices</a></li><li><a href=https://jgwallis.github.io/terms/index.html>Terms</a></li><li><a href=https://jgwallis.github.io/about/index.html>About</a></li><li><a href=https://jgwallis.github.io/real-help/index.html>Real Help</a></li><li><a href=https://jgwallis.github.io/blog/index.html>Blog</a></li><li><a href=https://jgwallis.github.io/legal/index.html>Legal</a></li></ul></div></nav><nav class="uk-navbar-container uk-hidden@m uk-navbar" uk-navbar><div class=uk-navbar-left><a class="uk-navbar-item uk-logo" href=https://jgwallis.github.io/index.html><img style=height:30px;width:167px src=https://jgwallis.github.io/images/JGW-Logo.svg alt="John Wallis Logo"></a></div><div class=uk-navbar-right><a class="uk-navbar-toggle uk-hidden@m uk-navbar-toggle-icon uk-icon" uk-navbar-toggle-icon uk-toggle href=#offcanvas-nav>MENU&nbsp;&nbsp;<svg width="10" height="20" viewBox="0 0 10 20" xmlns="http://www.w3.org/2000/svg" icon="navbar-toggle-icon" ratio="1"><rect y="3" width="10" height="2"/><rect y="9" width="10" height="2"/><rect y="15" width="10" height="2"/></svg></a></div></nav><div id=offcanvas-nav uk-offcanvas="overlay: true" class=uk-offcanvas><div class=uk-offcanvas-bar><ul class="uk-nav uk-nav-default"><li><a href=https://jgwallis.github.io/index.html>Home</a></li><li><a href=https://jgwallis.github.io/services/index.html>Services</a></li><li><a href=https://jgwallis.github.io/areas/index.html>Areas</a></li><li><a href=https://jgwallis.github.io/hours/index.html>Hours</a></li><li><a href=https://jgwallis.github.io/reviews/index.html>Reviews</a></li><li><a href=https://jgwallis.github.io/contact/index.html>Contact</a></li><li><a href=https://jgwallis.github.io/prices/index.html>Prices</a></li><li><a href=https://jgwallis.github.io/terms/index.html>Terms</a></li><li><a href=https://jgwallis.github.io/about/index.html>About</a></li><li><a href=https://jgwallis.github.io/real-help/index.html>Real Help</a></li><li><a href=https://jgwallis.github.io/blog/index.html>Blog</a></li><li><a href=https://jgwallis.github.io/legal/index.html>Legal</a></li></ul></div></div><section class="uk-section uk-section-primary uk-section-small"><div class="uk-container uk-container-small"><h1 id=trusted-platform-module>The Trusted Platform Module</h1></div></section><section class="uk-section uk-section-small"><div class="uk-container uk-container-small"><h3 id=what-is-the-tpm>What is the Trusted Platform Module?</h3><p>The Trusted Platform Module is a hardware device that can very quickly
+encrypt data on request.
+It can also be used to generate streams of random numbers, the kind
+that are random enough to be used for cryptography rather than the
+&lsquo;pseudo-random&rsquo; numbers that can be generated using
+just software.</p><h3 id=what-is-the-tpm>How the Trusted Platform Module can go wrong</h3><p>I was recently working on a Lenovo laptop that was running extremely
+slowly, and after looking at the system event log realised that a
+problem with the Trusted Platform Module was generating a large
+number of error messages.
+In fact there were so many errors that recording them all was the main
+reason that the system was running so sluggishly.
+Almost all of the error messages said:</p><p>&lsquo;The initialization of the Trusted Platform Module (TPM) failed.
+The TPM may be in failure mode.
+To allow diagnosis, contact the TPM manufacturer with the attached
+information.&rsquo;</p><p>In this case the Trusted Platform Module was manufactured by Intel.
+However, despite the advice in the message, I didn&lsquo;t even consider
+contacting them.
+I used to work for Intel many years ago and had a pretty good idea that
+asking them for help would be a waste of time, and in any case
+suspected that it was more likely to be a Microsoft problem.
+Obviously contacting Microsoft wouldn&rsquo;t get me anywhere either, so
+it was the usual case of sorting out the problem myself.</p><h3 id=resetting-the-tpm>Resetting the Trusted Platform Module</h3><p>If the Trusted Platform Module chip had physically failed, there would
+not have been anything we could have done about it other than fit a
+replacement.
+However, it was not very likely that the Trusted Platform Module was
+really broken.
+What had probably happened was that the Trusted Platform Module chip was
+alright, but had fallen into &lsquo;failure mode&rsquo; and therefore
+needed to be reset.
+The only practical thing to do was go through the reset procedure and
+see if it worked.</p><p>Having said that, resetting the Trusted Platform Module was not without
+its risks.
+If the laptop contained any data that had been encrypted by the Trusted
+Platform Module, it would be impossible to decrypt such data if the
+Trusted Platform Module was reset, because the resetting process
+would involve throwing away the current encryption / decryption
+keys.
+The solution to this potential problem was to back up all the user data
+first.
+Thankfully there were not many user files, so the backup did not take
+very long.</p><p>After replying &lsquo;get on with it&rsquo; to numerous dire warnings
+when asking to reset the Trusted Platform Module chip, and biting my
+nails while the process took place, the user data were all still
+readable.
+This is because the information was stored as plain text rather than
+being encrypted.
+However, it would probably have been a very different story if any of
+the user data had been protected using software such as
+&lsquo;Bitlocker&rsquo; and the keys had been lost.</p><p>After letting the system run for quite a while, I checked the event log
+and the constant stream of Trusted Platform Module errors had thankfully
+stopped.
+The computer was running much faster than previously and the problem
+seemed to be solved.
+Like many Windows problems, you wouldn&rsquo;t have much clue as to what
+was going on if it weren&rsquo;t for the event logger.
+Having said that, many entries in the event logs are of little interest
+and Windows can still run if you ignore them.</p><p>You might be thinking that it would&rsquo;ve been simpler to just stop
+the event logging process, but that that could&rsquo;ve masked all
+kinds of other errors, and for some reason several parts of
+Windows won&rsquo;t work properly unless the event logger
+is running.
+I once disabled the event logger as part of an experiment, and the Wi-Fi
+stopped working for some reason.
+Many areas of Windows are poorly documented and exhibit what might
+politely be called &lsquo;unexpected&rsquo; behaviour.</p><br></div></section><section class="uk-section uk-section-small"><div class="uk-container uk-container-small"><hr><div class=meta>Sunday, 28 Jun, 2020</div></div></section></body></html>
