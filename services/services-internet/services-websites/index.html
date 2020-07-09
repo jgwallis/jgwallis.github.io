@@ -44,10 +44,18 @@ for example.
 None of these systems is going away any time soon.
 However, for many kinds of website, using a large and complicated content
 management system like WordPress is way over-the-top.
-This is why lot of web developers are going back to the original way of
-creating websites, the &lsquo;static&rsquo; way, and I am one of them.
+For this reason, many web developers are going back to the original way
+of creating websites, the &lsquo;static&rsquo; way, and I am one of
+them.
 They are particularly suitable for small business websites, which is
-what most of my web development work involves.</p><h3>Editing a &lsquo;static&rsquo; website</h3><p>It&rsquo;s not quite as easy to edit a &lsquo;static&rsquo; website as it
+what most of my web development work involves.
+The website you are looking at now is a static website.
+This doesn&lsquo;t mean that nothing can change, or that every page just
+consists of text and images that sit there and do nothing.
+It simply means that every page on the website is built before being put
+on the web server that hosts the website, so the web server never has to
+do anything &lsquo;clever&rsquo; and just has to hand out ready-made
+pages on demand.</p><h3>Editing a &lsquo;static&rsquo; website</h3><p>It&rsquo;s not quite as easy to edit a &lsquo;static&rsquo; website as it
 is to edit a &lsquo;dynamic&rsquo; website, but anyone can learn to do
 it.
 Unfortunately there aren&rsquo;t many programs available to help manage a
@@ -127,7 +135,7 @@ show how everything works.</p><p>Within the website folder you will find at leas
 things:</p><ol><li>A folder called &lsquo;content&rsquo;.</li><li>A folder called &lsquo;themes&rsquo;.</li><li>A file called &lsquo;config.toml&rsquo;.</li></ol><p>You might also find other files, such as &lsquo;notes.txt&rsquo; for
 example, but such files do not have any effect on the website.
 All they do is contain information that might be useful for people
-maintaining the website.</p><h2>The &lsquo;content&rsquo; folder</h2><p>If you want to change the content of a website, you will usually find it
+maintaining the website.</p><h3>The &lsquo;content&rsquo; folder</h3><p>If you want to change the content of a website, you will usually find it
 in the &lsquo;content&rsquo; folder.
 All websites have a &lsquo;home&rsquo; page, which is often different
 from the other pages on a website, and is normally held in a file
@@ -155,8 +163,22 @@ For example, an HTML paragraph starts with &lsquo;&lt;p>&rsquo; and
 ends with &lsquo;&lt;/p>&rsquo;.
 If you want to add a new paragraph to the &lsquo;about&rsquo; page there
 will already be plenty of examples in the file you are editing.
-All you need to do is copy an existing paragraph then change the text.</p><h2>The &lsquo;themes&rsquo; folder</h2><p>Unless you are completely re-designing the website, you can more or less
-ignore the &lsquo;themes&rsquo; folder.</p><h2>The &lsquo;config.toml&rsquo; file</h2><p>This is the configuration file for the website.
+All you need to do is copy an existing paragraph then change the text.</p><h3>The &lsquo;themes&rsquo; folder</h3><p>Unless you are completely re-designing the website, you can more or less
+ignore the &lsquo;themes&rsquo; folder.</p><h3>The &lsquo;config.toml&rsquo; file</h3><p>This is the configuration file for the website.
 Configuration files can be in several different formats, but all of the
 websites that I&rsquo;ve been involved with use the &lsquo;.toml&rsquo;
-(&lsquo;Tom&rsquo;s Obvious Markup Language&rsquo;) format.</p><br></div></section></body></html>
+(&lsquo;Tom&rsquo;s Obvious Markup Language&rsquo;) format.</p><h2>Website deployment</h2><p>Once you have built the website in the &lsquo;public&rsquo; folder, you
+need to publish it on the Internet.
+In other words you have to put it on a web server so that any Internet
+user can see it using a web browser.
+Website developers refer to this process as &lsquo;deployment&rsquo;.
+Different web hosts often use similar software, but the exact details of
+how to deploy a website on a particular web host&lsquo;s server will
+often be specific to that host.
+Most web hosts support an old-fashioned method of transferring files from
+your computer onto their server(s) using FTP (File Transfer Protocol).
+They will probably also support a popular control panel facility called
+&lsquo;cPanel&rsquo;, which supports the uploading of files.
+A less common facility that is very easy to use, once set up, is called
+&lsquo;WebDav&rsquo;, which was originally designed to support multiple
+authors working together on a document.</p><br></div></section></body></html>
