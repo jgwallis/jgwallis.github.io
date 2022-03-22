@@ -1,0 +1,120 @@
+<!doctype html><html xmlns="http://www.w3.org/1999/xhtml" class="no-js" xml:lang="en" lang="en-gb">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<title>Linux Printer Trouble</title><meta name="description" content="<no description>">
+<meta name="robots" content="noindex">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="generator" content="Hugo 0.85">
+<link rel="canonical" href="https://jgwallis.github.io/technote/linux-printer-trouble/">
+<link rel="shortcut icon" href="/favicon.ico">
+<style>@font-face{font-family:sairasemicondensed;font-display:swap;font-variant:normal;font-weight:700;font-style:normal;src:url(https://jgwallis.github.io/fonts/SairaSemiCondensed-Medium.ttf)format('truetype')}</style><style>@font-face{font-family:open sans;font-display:swap;font-variant:normal;font-weight:400;font-style:normal;src:url(https://jgwallis.github.io/fonts/OpenSans-Regular.ttf)format('truetype')}</style><link rel="stylesheet" type="text/css" href="https://jgwallis.github.io/css/JGW.css">
+<script src="https://jgwallis.github.io/js/uikit.min.js"></script>
+<script src="https://jgwallis.github.io/js/uikit-icons.min.js"></script>
+</head><body>
+<nav class="uk-navbar-container uk-visible@m" uk-navbar role="navigation">
+<div class="uk-navbar-center">
+<a class="uk-navbar-item uk-logo" href="https://jgwallis.github.io/">
+<img style="height:30px;width:167px" src="https://jgwallis.github.io/images/JGW-Logo.svg" alt="John Wallis Logo">
+</a>
+<ul class="uk-navbar-nav">
+<li><a href="https://jgwallis.github.io/">Home</a></li><li><a href="https://jgwallis.github.io/services/">Services</a></li><li><a href="https://jgwallis.github.io/areas/">Areas</a></li><li><a href="https://jgwallis.github.io/hours/">Hours</a></li><li><a href="https://jgwallis.github.io/reviews/">Reviews</a></li><li><a href="https://jgwallis.github.io/contact/">Contact</a></li><li><a href="https://jgwallis.github.io/prices/">Prices</a></li><li><a href="https://jgwallis.github.io/terms/">Terms</a></li><li><a href="https://jgwallis.github.io/about/">About</a></li><li><a href="https://jgwallis.github.io/real-help/">Real Help</a></li><li><a href="https://jgwallis.github.io/post/">Blog</a></li><li><a href="https://jgwallis.github.io/legal/">Legal</a></li></ul></div></nav><nav class="uk-navbar-container uk-hidden@m uk-navbar" uk-navbar>
+<div class="uk-navbar-left">
+<a class="uk-navbar-item uk-logo" href="https://jgwallis.github.io/index.html">
+<img style="height:30px;width:167px" src="https://jgwallis.github.io/images/JGW-Logo.svg" alt="John Wallis Logo">
+</a>
+</div><div class="uk-navbar-right">
+<a class="uk-navbar-toggle uk-hidden@m uk-navbar-toggle-icon uk-icon" uk-navbar-toggle-icon uk-toggle href="#offcanvas-nav">
+MENU&nbsp;&nbsp;<svg width="10" height="20" viewBox="0 0 10 20" xmlns="http://www.w3.org/2000/svg" icon="navbar-toggle-icon" ratio="1"><rect y="3" width="10" height="2"/><rect y="9" width="10" height="2"/><rect y="15" width="10" height="2"/></svg>
+</a>
+</div></nav><div id="offcanvas-nav" uk-offcanvas="overlay: true" class="uk-offcanvas">
+<div class="uk-offcanvas-bar">
+<ul class="uk-nav uk-nav-default">
+<li><a href="https://jgwallis.github.io/">Home</a></li><li><a href="https://jgwallis.github.io/services/">Services</a></li><li><a href="https://jgwallis.github.io/areas/">Areas</a></li><li><a href="https://jgwallis.github.io/hours/">Hours</a></li><li><a href="https://jgwallis.github.io/reviews/">Reviews</a></li><li><a href="https://jgwallis.github.io/contact/">Contact</a></li><li><a href="https://jgwallis.github.io/prices/">Prices</a></li><li><a href="https://jgwallis.github.io/terms/">Terms</a></li><li><a href="https://jgwallis.github.io/about/">About</a></li><li><a href="https://jgwallis.github.io/real-help/">Real Help</a></li><li><a href="https://jgwallis.github.io/post/">Blog</a></li><li><a href="https://jgwallis.github.io/legal/">Legal</a></li></ul></div></div><section class="uk-section uk-section-primary uk-section-small uk-background-cover uk-background-center-center" style="background-image:url(/images/BlueGradientV001.webp)">
+<div class="uk-container uk-container-small">
+<h1 id="linux-printer-trouble" class="uk-article-title">
+Linux Printer Trouble
+</h1></div></section><section class="uk-section uk-section-small">
+<div class="uk-container uk-container-small">
+<h2>
+Difficulty Printing on an EPSON Workforce Device
+</h2><p>
+Today I helped someone who was suffering from an annoying problem when
+trying to print documents onto an EPSON Workforce printer from Linux
+Mint 20.3 Cinnamon Edition (64-bit).
+After starting up the computer, the first attempt to print a document
+onto the printer would work, but for some reason there would be an
+unreasonably long delay before the document actually appeared.
+After the first document was eventually printed, the printer would then
+claim that the print job was stuck in the queue, and subsequent
+attempts to print anything would silently fail.
+</p><p>
+Linux has a built-in printing system called CUPS (the Common UNIX Printing
+System), which can be accessed using a web browser by going to the address
+&lsquo;localhost:631&rsquo;.
+When I looked at CUPS, it was possible to examine the printer queues, and
+there were no jobs stuck in any of them, so the message saying that there
+was something stuck in the EPSON Workforce printer queue was nonsense.
+</p><p>
+At the same time there was another problem, as multiple printers with
+similar names were apparently available, rather than just one printer
+called something like &lsquo;EPSON Workforce&rsquo;.
+It was difficult to know which one to use when trying to print a document,
+but they all seemed to exhibit the same &lsquo;only working once&rsquo;
+behaviour.
+In addition, whenever I tried to delete the printer that had a very long
+serial number at the end of its name, Linux Mint instantly recreated it,
+so that particular printer was effectively impossible to remove from
+the system.
+</p><p>
+The &lsquo;instantly returning printer&rsquo; trouble seemed to be caused
+by Linux&rsquo;s new &lsquo;driverless printers&rsquo; mechanism, whereby
+system administrators no longer had to install driver software for new
+printers because the system did this for itself automatically.
+However, after doing a little research on the Internet, I discovered that
+there was a way of stopping this from happening.
+The way to prevent the system from automatically detecting and installing
+printers was to remove the &lsquo;cups-browsed&rsquo; package.
+</p><p>
+Linux Mint 20 also had a package called &lsquo;ippusbxd&rsquo; that could
+stop printers from working properly, so I thought it would probably be a
+good idea to get rid of that as well.
+The way to remove the &lsquo;cups-browsed&rsquo; package from the system
+was to open a terminal window, type
+&lsquo;sudo apt purge cups-browsed&rsquo;,
+then type in the administrator password when requested.
+Similarly, the way to remove the &lsquo;ippusbxd&rsquo; package from the
+system was to open a terminal window, type
+&lsquo;sudo apt purge ippusbxd&rsquo;,
+then type in the administrator password when requested.
+</p><p>
+After getting rid of the unwanted packages, the next step was to visit the
+Epson website and download the &lsquo;amd64.deb&rsquo; files containing
+the printer and scanner drivers (the printer part of any multi-function
+device is actually separate from the scanner part, even though both
+parts are physically located within the same plastic shell).
+I then installed the printer and scanner drivers manually, after which
+both printing and scanning worked properly.
+This just goes to show that even though Linux is superior to Windows in
+just about every conceivable way, it can still suffer from occasional
+problems.
+</p><br>
+</div></section><section class="uk-section uk-section-small">
+<div class="uk-container uk-container-small">
+<footer>
+<div id="footer-container" class="uk-container uk-container-small">
+<div uk-grid class="uk-child-width-expand@s uk-flex-middle uk-grid uk-text-center uk-text-small uk-visible@m jgw-footer">
+<div class="uk-width-1-2@m uk-text-left uk-first-column">
+<h5>
+Copyright &copy; J. G. Wallis
+</h5></div><div class="uk-width-1-2@m uk-text-right">
+<h5>
+Sunday, 20 Mar, 2022
+</h5></div></div><div uk-grid class="uk-child-width-expand@s uk-flex-middle uk-grid uk-text-center uk-text-small uk-hidden@m jgw-footer">
+<div class="uk-width-1-1@s uk-text-center uk-first-column">
+<h5>
+Copyright &copy; J. G. Wallis
+</h5></div><div class="uk-width-1-1@s uk-text-center">
+<h5>
+Sunday, 20 Mar, 2022
+</h5></div></div></div></footer></div></section></body></html>
